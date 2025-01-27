@@ -1,0 +1,176 @@
+- Cierre de ticket prepa 🔋
+    Validadacion previa:
+
+      Antes de cerrar un ticket prepa debes verificar en NXT si ya restauro el nodo , tambien verificar en jira si el estado del ticket es prepa tambien.
+      si estas dos condiciones cumplen puedes cerrar el ticket 
+      
+        Tiempo de outage:
+          el tiempo de outage debe ser desde que se creo el ticket OTS hasta que restablecio el nodo sin embargo es no puede suber el outage de 4 horas 
+        
+            comentario de cierre:
+              Se evidencia restablecimiento del servicio electrico , se procede con el cierre del ticket 
+
+
+                Codigos de cierre para tickets prepa:
+                  
+                  Failure Point:
+                  Fixed (access) » HFC » Node - power supply 
+                  
+                  Failure Code:
+                  External Factor » commercial AC power failure » commercial AC power failure 
+                  
+                  Solution Code:
+                  power restored 
+                  
+                  Attributed To:
+                  3rd party vendor
+                  
+                  Resolved By:
+                  Provider 
+
+
+- Cierre por Mantenimiento
+    Validacion previa:
+      Debes verificar que el nodo esta en Mantenimiento en jira si esa condicion cumple debes cerrar el ticket.
+
+        Tiempo outage:
+          El tiempo del Outage debe ser de 1 minuto 
+      
+        
+          comentario de cierre:
+            Nodo en manteniento , falla trabajada bajo el ticket JIRA X.
+          
+              Codigos de cierre:
+                
+                Failure Point:
+                Fixed (access) » HFC » HFC
+                
+                Failure Code:
+                Process Issues » Change MGT » Outage Expected
+                
+                Solution Code:
+                Maintenance window completed
+                
+                Attributed To:
+                Internal
+                
+                Resolved By:
+                Outside Plant
+
+
+- Approval enviados como Feeder
+    Codigos de cierre:
+      
+      Failure Point:
+      Fixed (access) » HFC » Cable
+      
+      Failure Code:
+      System Issues » Wiring Failure » Coaxial
+      
+      Solution Code:
+      Coaxial wiring replacement
+      
+      Attributed To:
+      Internal
+      
+      Resolved By:
+      Outside Plant
+
+
+- Cierre de casos duplicados cuando no vienen de call center:
+    
+    Tiempo outage:
+      El tiempo del Outage debe ser de 1 minuto 
+        
+        Codigos de cierre:
+
+          Failure Point:
+          Fixed (access) » HFC » HFC
+          
+          Failure Code:
+          Created in Error » Created in Error » Duplicated ticket
+          
+          Solution Code:
+          No action performed
+          
+          Attributed To:
+          Internal
+          
+          Resolved By:
+          Tier 1 Support
+
+
+- Cierre de Casos del Call Center
+    Proceso para gestionar un caso del Call Center:
+      
+      Validación previa:
+
+        Antes de gestionar un caso, verifica en Jira y Oracle si este ya está gestionado o en proceso de gestión.
+        Si ya está gestionado, ciérralo como duplicado.
+          
+                
+          Comentario de cierre:
+            Ticket Duplicado, Falla trabajada bajo ticket OTS X
+              
+              Tiempo outage:
+                El tiempo del Outage debe ser de 1 minuto 
+
+                 Nota importante:
+                  Antes de cerrar el ticket en OTS asigna el ticket duplicado a Jira OTS Duplicate para cerrar el en ticket en JIRA.
+                  Prioriza gestionar primero los tickets generados por Oracle, antes que los del Call Center.
+
+                      
+                    Codigos de cierre de tickets duplicados de call Center:
+                        
+                        Failure Point:
+                        Fixed (access) » HFC » HFC
+                        
+                        Failure Code:
+                        Created in Error » Created in Error » Duplicated ticket
+                        
+                        Solution Code:
+                        No action performed
+                        
+                        Attributed To:
+                        Internal
+                        
+                        Resolved By:
+                        Tier 1 Support
+                    
+                     
+- Cierre de Call Center Cuando No Aplica
+    Proceso para validar y cerrar el caso:
+      
+      Validación en previa:
+
+        Confirma si el nodo presenta una afectación de clientes con más de 5 cable modems offline en la misma zona geográfica.
+        Si NO cumple con este criterio, proceder a cerrar el caso.
+
+          Comentarios de cierre según el caso:
+            Falla no cumple con número de Cable Modems Offline requeridos: 5 o CMs solicitados no se encuentran relacionados en la misma zona geográfica.
+
+               Tiempo outage:
+                El tiempo del Outage debe ser de 1 minuto
+
+                  Nota importnte:
+                    Antes de cerrar el ticket en OTS asigna el ticket duplicado a Jira OTS Duplicate para cerrar el en ticket en JIRA
+            
+
+                      Codigo de cierre de call center cuando no aplica:
+                        
+                        Failure Point:
+                        Fixed (access) » HFC » HFC
+                        
+                        Failure Code:
+                        Created in Error » Created in Error » Not applicable / Problem ticket required
+                        
+                        Solution Code:
+                        No action performed
+                        
+                        Attributed To:
+                        Internal
+                        
+                        Resolved By:
+                        Tier 1 Support
+
+                    
