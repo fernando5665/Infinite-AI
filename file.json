@@ -1,5 +1,5 @@
 {
-  "Cierredeticket": {
+  "Cierres de tickets": {
     "prepa": {
       "validacionPrevia": "Antes de cerrar un ticket prepa debes verificar en NXT si ya restauró el nodo, también verificar en JIRA si el estado del ticket es prepa. Si estas dos condiciones cumplen, puedes cerrar el ticket.",
       "tiempoOutage": "El tiempo de outage debe ser desde que se creó el ticket OTS hasta que restableció el nodo; sin embargo, no puede superar las 4 horas.",
@@ -26,7 +26,7 @@
       },
       "notasImportantes": "Guarda un registro del ticket de mantenimiento en JIRA para futuras referencias."
     },
-    "duplicadosNoCallCenter": {
+    "Tickets duplicados por el call center": {
       "validacionPrevia": "Valida que el ticket no haya sido generado previamente en JIRA.",
       "tiempoOutage": "El tiempo de outage debe ser de 1 minuto.",
       "comentarioCierre": "Ticket duplicado, se cierra sin acciones adicionales.",
@@ -39,7 +39,7 @@
       },
       "notasImportantes": "Confirma que no existan actividades en curso asociadas al ticket duplicado."
     },
-    "ticketduplicadoporelcalcenter": {
+    "ticket duplicado por el calL center": {
       "validacionPrevia": "Antes de gestionar un caso, verifica en JIRA y Oracle si este ya está gestionado o en proceso de gestión. Si ya está gestionado, ciérralo como duplicado.",
       "tiempoOutage": "El tiempo de outage debe ser de 1 minuto.",
       "comentarioCierre": "Ticket Duplicado, Falla trabajada bajo ticket OTS X.",
@@ -52,7 +52,7 @@
       },
       "notasImportantes": "Prioriza los tickets generados por Oracle antes de los del Call Center."
     },
-    "callCenterNoAplica": {
+    "call Center No Aplica": {
       "validacionPrevia": "Confirma si el nodo presenta una afectación de clientes con más de 5 cable modems offline en la misma zona geográfica. Si no cumple, procede a cerrar el caso.",
       "tiempoOutage": "El tiempo de outage debe ser de 1 minuto.",
       "comentarioCierre": "Falla no cumple con número de Cable Modems Offline requeridos: 5 o CMs solicitados no se encuentran relacionados en la misma zona geográfica.",
@@ -65,7 +65,7 @@
       },
       "notasImportantes": "Antes de cerrar el ticket en OTS, asigna el ticket duplicado a JIRA OTS Duplicate para cerrar el ticket en JIRA."
     },
-    "nodoQuerestableceAntesDeEscalar": {
+    "Nodo Que restablece Antes De Escalar": {
       "validacionPrevia": "Debes validar en NXT que el nodo realmente ha restablecido.",
       "tiempoOutage": "El tiempo de outage debe ser dependiendo del tiempo que duró la afectación desde que se creó el ticket hasta que restableció el nodo.",
       "comentarioCierre": "Se procede con el cierre del ticket dado que el nodo restableció antes de ser escalado.",
@@ -78,7 +78,7 @@
       },
       "notasImportantes": "Asegúrate de que no existan fallas adicionales pendientes antes del cierre."
     },
-    "callCenterPorMantenimiento": {
+    "call Center Por Mantenimiento": {
       "validacionPrevia": "Debes validar en JIRA si realmente el nodo está en mantenimiento. Si este es el caso, debes tomar un screenshot de la evidencia que está en mantenimiento en JIRA.",
       "tiempoOutage": "El tiempo de outage debe ser de 1 minuto.",
       "comentarioCierre": "El nodo está en mantenimiento, falla trabajada bajo el ticket de JIRA X.",
