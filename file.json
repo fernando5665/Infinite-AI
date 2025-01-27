@@ -60,7 +60,7 @@
           "resolvedBy": "Tier 1 Support"
         }
       },
-      "ticket": {
+      "Nodoquerestableceantesdeescalar": {
         "validacionPrevia": "Debes validar en  NXT que el nodo realmente ha restablecido",
         "tiempoOutage": "El tiempo de outage debe ser dependiendo del tiempo que duro la afectacion desde que se creo el ticket hasta que restablecio el nodo",
         "comentarioCierre": "Se procede con el cierre del ticket dado que el nodo restablecio antes de ser escalado",
