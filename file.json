@@ -1,0 +1,89 @@
+{
+    "Cierredeticket": {
+      "prepa": {
+        "validacionPrevia": "Antes de cerrar un ticket prepa debes verificar en NXT si ya restauró el nodo, también verificar en JIRA si el estado del ticket es prepa. Si estas dos condiciones cumplen, puedes cerrar el ticket.",
+        "tiempoOutage": "El tiempo de outage debe ser desde que se creó el ticket OTS hasta que restableció el nodo; sin embargo, no puede superar las 4 horas.",
+        "comentarioCierre": "Se evidencia restablecimiento del servicio eléctrico, se procede con el cierre del ticket.",
+        "codigosCierre": {
+          "failurePoint": "Fixed (access) » HFC » Node - power supply",
+          "failureCode": "External Factor » commercial AC power failure » commercial AC power failure",
+          "solutionCode": "power restored",
+          "attributedTo": "3rd party vendor",
+          "resolvedBy": "Provider"
+        }
+      },
+      "mantenimiento": {
+        "validacionPrevia": "Debes verificar que el nodo está en mantenimiento en JIRA. Si esa condición cumple, debes cerrar el ticket.",
+        "tiempoOutage": "El tiempo de outage debe ser de 1 minuto.",
+        "comentarioCierre": "Nodo en mantenimiento, falla trabajada bajo el ticket JIRA X.",
+        "codigosCierre": {
+          "failurePoint": "Fixed (access) » HFC » HFC",
+          "failureCode": "Process Issues » Change MGT » Outage Expected",
+          "solutionCode": "Maintenance window completed",
+          "attributedTo": "Internal",
+          "resolvedBy": "Outside Plant"
+        }
+      },
+      "duplicadosNoCallCenter": {
+        "tiempoOutage": "El tiempo de outage debe ser de 1 minuto.",
+        "codigosCierre": {
+          "failurePoint": "Fixed (access) » HFC » HFC",
+          "failureCode": "Created in Error » Created in Error » Duplicated ticket",
+          "solutionCode": "No action performed",
+          "attributedTo": "Internal",
+          "resolvedBy": "Tier 1 Support"
+        }
+      },
+      "ticketduplicadoporelcalcenter": {
+        "proceso": "Antes de gestionar un caso, verifica en JIRA y Oracle si este ya está gestionado o en proceso de gestión. Si ya está gestionado, ciérralo como duplicado.",
+        "comentarioCierre": "Ticket Duplicado, Falla trabajada bajo ticket OTS X.",
+        "tiempoOutage": "El tiempo de outage debe ser de 1 minuto.",
+        "nota": "Antes de cerrar el ticket en OTS, asigna el ticket duplicado a JIRA OTS Duplicate para cerrar el ticket en JIRA. Prioriza gestionar primero los tickets generados por Oracle antes que los del Call Center.",
+        "codigosCierre": {
+          "failurePoint": "Fixed (access) » HFC » HFC",
+          "failureCode": "Created in Error » Created in Error » Duplicated ticket",
+          "solutionCode": "No action performed",
+          "attributedTo": "Internal",
+          "resolvedBy": "Tier 1 Support"
+        }
+      },
+      "callCenterNoAplica": {
+        "validacionPrevia": "Confirma si el nodo presenta una afectación de clientes con más de 5 cable modems offline en la misma zona geográfica. Si no cumple, procede a cerrar el caso.",
+        "comentariosCierre": "Falla no cumple con número de Cable Modems Offline requeridos: 5 o CMs solicitados no se encuentran relacionados en la misma zona geográfica.",
+        "tiempoOutage": "El tiempo de outage debe ser de 1 minuto.",
+        "nota": "Antes de cerrar el ticket en OTS, asigna el ticket duplicado a JIRA OTS Duplicate para cerrar el ticket en JIRA.",
+        "codigosCierre": {
+          "failurePoint": "Fixed (access) » HFC » HFC",
+          "failureCode": "Created in Error » Created in Error » Not applicable / Problem ticket required",
+          "solutionCode": "No action performed",
+          "attributedTo": "Internal",
+          "resolvedBy": "Tier 1 Support"
+        }
+      },
+      "ticket": {
+        "validacionPrevia": "Debes validar en  NXT que el nodo realmente ha restablecido",
+        "tiempoOutage": "El tiempo de outage debe ser dependiendo del tiempo que duro la afectacion desde que se creo el ticket hasta que restablecio el nodo",
+        "comentarioCierre": "Se procede con el cierre del ticket dado que el nodo restablecio antes de ser escalado",
+        "codigosCierre": {
+          "failurePoint": "Fixed (access) » HFC » HFC",
+          "failureCode": " Undetermined » restored before escalation to resolving team ",
+          "solutionCode": "No action performed",
+          "attributedTo": "Internal",
+          "resolvedBy": "Tier 1 Support"
+        }
+      },
+      "Callcenterpormatenimento": {
+        "validacionPrevia": "Debes validar en jira si realmente el nodo esta en manteniemto , si este es el caso debes tomar un screemshoot de la evidencia que esta en mantenienmto en jira ",
+        "tiempoOutage": "el tiempo de outage es de 1 minuto",
+        "comentarioCierre": "El nodo esta en mantenimiento , falla trabajada bajo el ticket de jira x",
+        "codigosCierre": {
+          "failurePoint": "Fixed (access) » HFC » HFC",
+          "failureCode": "Process Issues » Change MGT » Outage Expected",
+          "solutionCode": "Maintenance window completed",
+          "attributedTo": "Internal",
+          "resolvedBy": "Outside Plant"
+        }
+      }
+    }
+  }
+  
