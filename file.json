@@ -26,7 +26,7 @@
       },
       "notasImportantes": "Guarda un registro del ticket de mantenimiento en JIRA para futuras referencias."
     },
-    "Tickets duplicados por el call center": {
+    "Tickets duplicados": {
       "validacionPrevia": "Valida que el ticket no haya sido generado previamente en JIRA.",
       "tiempoOutage": "El tiempo de outage debe ser de 1 minuto.",
       "comentarioCierre": "Ticket duplicado, se cierra sin acciones adicionales.",
