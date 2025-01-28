@@ -24,7 +24,7 @@
         "ATTRIBUTED_TO": "Internal",
         "RESOLVED_BY": "Outside Plant"
       },
-      "NOTAS_IMPORTANTES": "Guarda Un Registro Del Ticket De Mantenimiento En JIRA Para Futuras Referencias."
+      "NOTAS_IMPORTANTES": "Es importante tambien tomar un screenshot del nodo que esta mantenimiento en jira y ponerlo como evidencia en OTS."
     },
     "TICKETS_DUPLICADOS": {
       "VALIDACION_PREVIA": "Valida Que El Ticket No Haya Sido Generado Previamente En JIRA.",
@@ -50,12 +50,12 @@
         "ATTRIBUTED_TO": "Internal",
         "RESOLVED_BY": "Tier 1 Support"
       },
-      "NOTAS_IMPORTANTES": "Prioriza Los Tickets Generados Por Oracle Antes De Los Del Call Center Y Asegúrate De Asignarlos Correctamente Antes Del Cierre."
+      "NOTAS_IMPORTANTES": "Prioriza Los Tickets Generados Por Oracle Antes De Los Del Call Center Y Asegúrate De Asignarlos Correctamente Antes Del Cierre , en estos tickets debe haber un comentario (EXISTING_TICKET)  ."
     },
     "CALL_CENTER_NO_APLICA": {
       "VALIDACION_PREVIA": "Confirma Si El Nodo Presenta Una Afectación De Clientes Con Más De 5 Cable Modems Offline En La Misma Zona Geográfica. Si No Cumple, Procede A Cerrar El Caso.",
       "TIEMPO_OUTAGE": "El Tiempo De Outage Debe Ser De 1 Minuto.",
-      "COMENTARIO_CIERRE": "Falla No Cumple Con Número De Cable Modems Offline Requeridos: 5 O CMs Solicitados No Se Encuentran Relacionados En La Misma Zona Geográfica.",
+      "COMENTARIO_CIERRE": "Falla No Cumple Con Número De Cable Modems Offline Requeridos: 5 O CMs Solicitados No Se Encuentran Relacionados En La Misma Zona Geográfica en estos tickets debe haber un comentario (NUMBER_CMS_DOESNT_APPLY o GEOGRAPHIC_DISTRIBUTION_CMS ) .",
       "CODIGOS_CIERRE": {
         "FAILURE_POINT": "Fixed (Access) » HFC » HFC",
         "FAILURE_CODE": "Created In Error » Created In Error » Not Applicable / Problem Ticket Required",
@@ -76,7 +76,7 @@
         "ATTRIBUTED_TO": "Internal",
         "RESOLVED_BY": "Tier 1 Support"
       },
-      "NOTAS_IMPORTANTES": "Asegúrate De Que No Existan Fallas Adicionales Pendientes Antes Del Cierre."
+      "NOTAS_IMPORTANTES": "."
     },
     "CALL_CENTER_POR_MANTENIMIENTO": {
       "VALIDACION_PREVIA": "Debes Validar En JIRA Si Realmente El Nodo Está En Mantenimiento. Si Este Es El Caso, Debes Tomar Un Screenshot De La Evidencia Que Está En Mantenimiento En JIRA.",
