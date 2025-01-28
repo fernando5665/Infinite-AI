@@ -48,3 +48,15 @@ if file_content:
             st.warning("Por favor, escribe una pregunta.")
 else:
     st.error("El contenido del archivo JSON no está disponible. Por favor, verifica el archivo.")
+
+# Espacio para apuntes importantes
+st.header("📝 Apuntes Importantes")
+with st.form("apuntes_form"):
+    apuntes = st.text_area("Escribe tus apuntes aquí:", "", height=200)
+    guardar = st.form_submit_button("Guardar Apuntes")
+
+if guardar:
+    # Guardar apuntes en un archivo de texto
+    with open("apuntes_importantes.txt", "a", encoding="utf-8") as file:
+        file.write(apuntes + "\n")
+    st.success("¡Tus apuntes se han guardado correctamente!")
