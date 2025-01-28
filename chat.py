@@ -36,8 +36,7 @@ NUMBER CMS DOESNT APPLY:
 Falla no cumple con Numero de Cable Modems Offline requeridos: 5
 	
 GEOGRAPHIC DISTRIBUTION CMS: 
-CMs solicitados no se encuentran relacionados en la misma zona geográfica.
-👌
+CMs solicitados no se encuentran relacionados en la misma zona geográfica..
 """
 
 # Configurar el diseño de la aplicación
@@ -50,6 +49,9 @@ col1, col2 = st.columns([1, 3])
 with col1:
     st.header("📝 Apuntes Importantes")
     st.text(apuntes_importantes)
+
+    # Agregar una imagen de ejemplo en las notas
+    st.image("Screenshot_6.jpg", caption="Ejemplo de imagen", use_container_width=True)
 
 # Mostrar la interfaz principal en la segunda columna
 with col2:
