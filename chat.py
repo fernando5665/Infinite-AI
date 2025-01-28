@@ -26,13 +26,18 @@ file_content = load_json(file_path)
 
 # Definir apuntes importantes en el código
 apuntes_importantes = """
-Etiqueta                      Comentario sugerido
+Etiqueta:
+Estas etiquetas deben usarse para los CSR (Tickets de Call Center), muy atentos
 
-EXISTING_TICKET: Ticket Duplicado, Falla trabajada bajo ticket numero 123456
+EXISTING TICKET: 
+Ticket Duplicado, Falla trabajada bajo ticket numero 123456
 	
-NUMBER_CMS_DOESNT_APPLY: Falla no cumple con Numero de Cable Modems Offline requeridos: 5
+NUMBER CMS DOESNT APPLY: 
+Falla no cumple con Numero de Cable Modems Offline requeridos: 5
 	
-GEOGRAPHIC_DISTRIBUTION_CMS: CMs solicitados no se encuentran relacionados en la misma zona geográfica.
+GEOGRAPHIC DISTRIBUTION CMS: 
+CMs solicitados no se encuentran relacionados en la misma zona geográfica.
+👌
 """
 
 # Configurar el diseño de la aplicación
