@@ -42,7 +42,7 @@
       "TICKET_DUPLICADO_POR_EL_CALL_CENTER": {
         "VALIDACION_PREVIA": "Antes De Gestionar Un Caso, Verifica En JIRA Y Oracle Si Este Ya Está Gestionado O En Proceso De Gestión. Si Ya Está Gestionado, Ciérralo Como Duplicado.",
         "TIEMPO_OUTAGE": "El Tiempo De Outage Debe Ser De 1 Minuto.",
-        "COMENTARIO_CIERRE": "Ticket Duplicado, Falla Trabajada Bajo Ticket OTS X.",
+        "COMENTARIO_CIERRE": "Ticket Duplicado, Falla Trabajada Bajo Ticket OTS X Jira x.",
         "CODIGOS_CIERRE": {
           "FAILURE_POINT": "Fixed (Access) » HFC » HFC",
           "FAILURE_CODE": "Created In Error » Created In Error » Duplicated Ticket",
