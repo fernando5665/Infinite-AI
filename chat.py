@@ -7,7 +7,7 @@ genai.configure(api_key="TU_API_KEY")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Lista de archivos JSON a cargar
-json_files = ["approval.json", "closingticket.json"]  # Agrega los archivos que necesitas
+json_files = ["approval.json", "file.json"]  # Agrega los archivos que necesitas
 txt_file_path = "Infinite AI.txt"
 
 # Función para cargar y combinar múltiples archivos JSON
