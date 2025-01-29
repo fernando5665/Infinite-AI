@@ -1,0 +1,167 @@
+{
+    "failure_point_class": {
+      "fixed_access": {
+        "failure_point_sub_class": {
+          "hfc": {
+            "failure_points": [
+              "AMPLIFIER",
+              "TAP",
+              "COUPLER",
+              "SUPPLY",
+              "CABLE",
+              "RECEPTOR",
+              "TRANSMISOR",
+              "COMPONENTS",
+              "CONECTOR",
+              "NODE",
+              "FUSE",
+              "POWER SUPPLY BREAKER",
+              "SPLITTER",
+              "SNR CLEANUP",
+              "AMPLIFIER - CHASSIS",
+              "AMPLIFIER - EQUALIZER",
+              "AMPLIFIER - POWER SUPPLY",
+              "AMPLIFIER - FUSE",
+              "AMPLIFIER - MODULE",
+              "CABLE - 500",
+              "CABLE - 750 TRUNK",
+              "CABLE - 500 FLEX",
+              "NODE - CHASSIS",
+              "NODE - EQUALIZER",
+              "NODE - POWER SUPPLY",
+              "NODE - FUSE",
+              "NODE - MODULE",
+              "NODE - RECEIVER",
+              "NODE TRANSMITTER",
+              "SOURCE - BATTERIES",
+              "SOURCE - BREAKER",
+              "SOURCE - TSJ CABLE",
+              "SOURCE - MODULE",
+              "SOURCE - GROUND",
+              "SOURCE - POWER INSERT",
+              "SOURCE TRANSPONDER",
+              "SOURCE - ELECTRIC METER"
+            ]
+          },
+          "hfc/headend": {
+            "failure_points": [
+              "OPTICAL SPLITTER",
+              "TX OPTICAL EQUIPMENT",
+              "RX OPTICAL EQUIPMENT",
+              "COPPER PATCHORD",
+              "FIBER PARCHORD",
+              "RED COMBINATION",
+              "TELEMETRY"
+            ]
+          }
+        }
+      },
+      "fixed_broadband": {
+        "failure_point_sub_class": {
+          "cmts": {
+            "failure_points": [
+              "FAN",
+              "CHASSIS",
+              "CPU",
+              "DTI - IOC (CLOCK)",
+              "DTI - IMC CARD (MANAGEMENT)",
+              "EQAM - CHASSIS",
+              "EQAM - POWER SUPPLY",
+              "EQAM - FAN MODULE",
+              "EQAM - DS384 CARD",
+              "EQAM - PROCESSOR CARD",
+              "EQAM - RFSW CARD",
+              "EQAM - TCC CARD",
+              "POWER SUPPLY",
+              "CABLE CARD",
+              "DTC CARD",
+              "PROCESSOR CARD",
+              "SPA CARD",
+              "DS CARD",
+              "US CARD",
+              "DS CABLE CARD",
+              "US CABLE CARD"
+            ]
+          }
+        }
+      }
+    },
+    "failure_code_class": {
+      "external_factor": {
+        "COMMERCIAL AC POWER FAILURE": ["COMMERCIAL AC POWER FAILURE", "SUSPENSION/ NONPAYMENT"],
+        "COMMERCIAL REQUERIMENT": ["CANCELLATION", "SUSPENSION", "COMMERCIAL REQUERIMENT"],
+        "CYBER ATTACK/SABOTAGE": ["CYBER ATTACK/SABOTAGE", "DENIAL OF SERVICE", "DDOS", "MALWARE", "UNAUTHORIZED ACCESS"],
+        "FIBER CUTS": [
+          "FIBER CUTS",
+          "FIRE",
+          "VANDALISM",
+          "MV ACCIDENT",
+          "RODENT/ANTS",
+          "WEATHER",
+          "BROKEN THREAD AT CLOSING",
+          "PRUNING",
+          "SUBSEA",
+          "ATTENUATION",
+          "ILLEGAL CONNECTION",
+          "ROAD WORKS",
+          "THIRD PARTY",
+          "SHORT CIRCUIT"
+        ],
+        "INAPPROPRIATE CONDITIONS": ["COLOCATION / LOCATIVE", "ELECTRICAL"],
+        "VANDALISM": ["VANDALISM"],
+        "MV ACCIDENT": ["MV ACCIDENT"],
+        "ENVIRONMENT": ["WEATHER", "NATURAL DISASTER", "FIRE"],
+        "NO FAULT FOUND": ["NO FAULT FOUND"],
+        "NOISE": ["NOISE"],
+        "ILLEGAL CONNECTION": ["ILLEGAL CONNECTION"],
+        "ROAMING": ["ROAMING"]
+      },
+      "human_error": {
+        "HUMAN ERROR": ["NEGLIGENCE", "OVERSIGHT"]
+      },
+      "process_issues": {
+        "CHANGE MGT": ["UNEXPECTED OUTAGE", "OUTAGE EXPECTED", "MAINTENANCE WINDOW NOT APPROVED", "MAINTENANCE WINDOW NOT NOTIFIED"],
+        "MIM MGT": ["INCIDENT SEVERITY UPGRADED", "INCIDENT SEVERITY DOWNGRADED"],
+        "UNAUTHORIZED ACCESS": ["UNAUTHORIZED ACCESS"],
+        "CHANNEL": ["NODE DESCOMMISSIONED", "SHUT DOWN"],
+        "BROADCAST OR TRAFFIC LOOP": ["BROADCAST OR TRAFFIC LOOP"],
+        "CONFIGURATION MGT": [
+          "PROVISIONING NOT COMPLETED",
+          "INCORRECT PROVISIONING OF ANOTHER SERVICE",
+          "CONFIGURATION FAILURE",
+          "CONFIGURATION MGT",
+          "ROAMING"
+        ]
+      },
+      "system_issues": {
+        "HARDWARE": ["HARDWARE FAILURE", "TEMPERATURE", "UNEXPECTED REBOOT", "RELEASE MANAGEMENT", "SHORT CIRCUIT"],
+        "SOFTWARE": ["SOFTWARE FAILURE", "BUG", "RELEASE MANAGEMENT"],
+        "WIRING FAILURE": ["FIBER OPTIC", "COPPER", "COAXIAL", "PIGTAIL"],
+        "MULTIPLE IP/TRANSMISSION FAILURES": ["MULTIPLE IP/TRANSMISSION FAILURES - DOBLE APERTURA"],
+        "MANAGEMENT": ["MANAGEMENT"]
+      },
+      "design": {
+        "CAPACITY": ["FORECAST", "RAPID GROWTH", "MEMORY/CPU", "LOW MEMORY CPU", "BALANCE", "PLATFORM"],
+        "DESIGN": ["DESIGN"],
+        "DESIGN NOT SUPPORTED": ["DESIGN NOT SUPPORTED"],
+        "BROADCAST OR TRAFFIC LOOP": ["BROADCAST OR TRAFFIC LOOP"]
+      },
+      "undetermined": {
+        "UNDETERMINED": [
+          "RESTORED BEFORE ESCALATION TO RESOLVING TEAM",
+          "NO RESPOND RECEIVED FROM RESOLVING TEAM",
+          "UNDETERMINED",
+          "AUTO CLOSET",
+          "NO TRAFFIC",
+          "WITHOUT CUSTOMER FEEDBACK"
+        ]
+      },
+      "created_in_error": {
+        "CREATED IN ERROR": ["CANCELLED BY THE USER", "DUPLICATED TICKET", "NOT APPLICABLE / PROBLEM TICKET REQUIRED"]
+      },
+      "provider": {
+        "PROVIDER": ["SOURCE ISSUE"]
+      }
+    }
+  }
+  
