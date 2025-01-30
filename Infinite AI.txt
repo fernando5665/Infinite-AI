@@ -4,10 +4,20 @@
 ¿Qué es un ticket HFC ?
     Es un registro técnico empleado para documentar y gestionar la afectación de uno o varios nodos en la red HFC cuando la causa raíz de la interrupción aún no ha sido identificada. Este ticket centraliza la información necesaria para el diagnóstico, seguimiento, y resolución del incidente.
 
-
-
-
 ¿Que es  un approval?
+    Un approval es un proceso mediante el cual el FSO (Field Service Operator) verifica y documenta la resolución de un ticket relacionado con problemas en la red HFC. Después de identificar y reparar la causa raíz del problema, el FSO envía una solicitud de aprobación (approval) al equipo de Tier 1 para confirmar si el nodo ha restablecido su funcionalidad tras las actividades realizadas.
+
+    Si el nodo no muestra signos de recuperación, el approval puede ser rechazado, indicando que el problema persiste y puede requerir acciones adicionales. Un ejemplo típico de un approval incluiría detalles técnicos como:
+
+    Elemento/Zona: Trunk
+    Componente/Acción: Corte; Fusible LPI
+    Causa Raíz: No AplicaAdemás, el FSO tiene la opción de incluir comentarios en el ticket para proporcionar información adicional sobre las acciones realizadas o las observaciones relevantes al incidente.
+
+
+Nota importantes : En todos los approval siempre es attributed to internal y resolved by outside plant
+
+¿Que es AEE?
+    El sistema de operación de Puerto Rico se compone de cuatro centrales de carga base: Central Aguirre, Central Costa Sur, Central San Juan y Central Palo Seco. Estas cuatro centrales generan la mayor parte de la energía que produce la Autoridad de Energía Eléctrica con una capacidad que puede alcanzar 3,75…
 
 
 	
