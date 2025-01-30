@@ -1,0 +1,137 @@
+{
+    "codes": [
+      {
+        "code": "POWER RESTORED",
+        "description": "Indica que la energía eléctrica ha sido restaurada a un equipo o componente de la red HFC después de un corte de energía o un fallo. Esto es crucial para asegurar que los equipos de la red continúen funcionando de manera adecuada."
+      },
+      {
+        "code": "FIBER OPTIC CABLE LAYING AND SPLICING",
+        "description": "Hace referencia a la instalación y empalme de cables de fibra óptica. Incluye tanto la colocación física de los cables como el proceso de empalme para asegurar la continuidad de la señal entre las fibras."
+      },
+      {
+        "code": "FIBER RECOVERY AND SPLICING",
+        "description": "Hace referencia a la recuperación de fibras ópticas existentes, posiblemente de una red antigua o dañada, y su posterior empalme para ser reutilizadas en la red."
+      },
+      {
+        "code": "OPTICAL FIBERS SWAPPED",
+        "description": "Se refiere a la tarea de cambiar (intercambiar) las fibras ópticas entre dos puntos para mejorar el rendimiento, realizar una actualización o resolver problemas técnicos."
+      },
+      {
+        "code": "OPTICAL FIBERS WIRING REPLACEMENT/CLEANING",
+        "description": "Hace referencia a la tarea de reemplazo y limpieza de cables de fibra óptica. Esta tarea puede implicar la retirada de cables dañados, la instalación de cables nuevos y la limpieza de las fibras para asegurar la correcta transmisión de señales."
+      },
+      {
+        "code": "SPLICE",
+        "description": "Proceso de conectar dos cables de fibra óptica de manera física y eficiente, uniendo sus extremos mediante un empalme. Este proceso es común cuando se realiza mantenimiento o ampliación de la infraestructura de fibra óptica en redes HFC."
+      },
+      {
+        "code": "COAXIAL WIRING REPLACEMENT",
+        "description": "Sustitución del cable coaxial utilizado para la transmisión de señales en sistemas de telecomunicaciones, especialmente en redes de cable."
+      },
+      {
+        "code": "COPPER WIRING REPLACEMENT",
+        "description": "Sustitución de cables de cobre utilizados para la transmisión de señales en la red, por cables más avanzados o nuevos, como los de fibra óptica, para mejorar el rendimiento."
+      },
+      {
+        "code": "EQ.HFC REPLACEMENT",
+        "description": "Sustitución de equipos dentro de la infraestructura de la red HFC, como nodos, amplificadores o dispositivos de cabecera, con el fin de mejorar el rendimiento o reemplazar equipos defectuosos."
+      },
+      {
+        "code": "CONNECTOR SETTING",
+        "description": "Ajustes o configuraciones relacionadas con los conectores utilizados en los equipos y cables de la red HFC para asegurar una transmisión adecuada de señales."
+      },
+      {
+        "code": "HARWARE CLEANING",
+        "description": "Mantenimiento preventivo en el que se limpia físicamente el hardware de los equipos de la red HFC (como routers, amplificadores, nodos), eliminando polvo y suciedad que puedan afectar su funcionamiento o generar sobrecalentamiento."
+      },
+      {
+        "code": "MAINTENANCE",
+        "description": "Actividades realizadas para asegurar que la infraestructura de la red HFC funcione de manera óptima, que incluyen reparación, actualización, ajustes o mejoras en los equipos o cables."
+      },
+      {
+        "code": "MAINTENANCE WINDOW COMPLETED",
+        "description": "Periodo de tiempo programado para realizar mantenimiento en la red, que ha sido finalizado exitosamente. Durante este periodo, pueden realizarse tareas como actualizaciones o reparaciones sin afectar significativamente el servicio a los usuarios."
+      },
+      {
+        "code": "MAINTENANCE WINDOW ROLLBACK",
+        "description": "Acción de revertir las modificaciones realizadas durante una ventana de mantenimiento debido a un error o problema durante el proceso. Esto puede implicar restaurar la configuración anterior para evitar fallos en la red."
+      },
+      {
+        "code": "ON-SITE INSPECTION",
+        "description": "Inspección física de la infraestructura de la red HFC en el lugar, que puede incluir la verificación de cables, equipos, conexiones y otros componentes para identificar posibles fallos o áreas que necesiten mantenimiento."
+      },
+      {
+        "code": "ACCESS / AGGR. EQUIPMENT / MODULE COLD START",
+        "description": "El inicio en frío implica reiniciar un módulo o equipo desde un estado completamente apagado. Esto generalmente incluye: 1) Apagar el módulo o equipo. 2) Esperar unos segundos para asegurar que todos los capacitores se descarguen. 3) Encender nuevamente el equipo."
+      },
+      {
+        "code": "ACCESS / AGGR. EQUIPMENT / MODULE REPLACEMENT",
+        "description": "El reemplazo de un módulo se refiere a la acción de retirar un módulo defectuoso o desactualizado y sustituirlo por uno nuevo o funcional."
+      },
+      {
+        "code": "ACCESS/AGGR.EQUIPMENT/PORT REPLACEMENT",
+        "description": "El reemplazo de un puerto implica cambiar un puerto o interfaz defectuosa en el equipo. Esto puede requerir la sustitución de tarjetas de red o módulos que contienen los puertos."
+      },
+      {
+        "code": "CALIBRATION",
+        "description": "Ajuste de los equipos o dispositivos de la red HFC para asegurar que las señales transmitidas estén dentro de los parámetros correctos de rendimiento, como la potencia de señal o la calidad de la transmisión."
+      },
+      {
+        "code": "EQUIPMENT SHUTTED DOWN",
+        "description": "Acción de apagar de forma controlada un equipo de la red, por ejemplo, para mantenimiento, reparaciones o actualizaciones."
+      },
+      {
+        "code": "EQUIPMENT/ MODULE REPLACEMENT",
+        "description": "Sustitución de equipos o módulos específicos dentro de la infraestructura de la red HFC, para mantener o mejorar la funcionalidad de la red."
+      },
+      {
+        "code": "NODE RESET",
+        "description": "Proceso de reiniciar un nodo de la red HFC, que es un punto de distribución y procesamiento de señales. Este reinicio puede ser necesario para restaurar el funcionamiento correcto del nodo cuando se presentan problemas."
+      },
+      {
+        "code": "ON SITE RESET",
+        "description": "Reinicio de un equipo o componente de la red HFC directamente en el lugar donde se encuentra, generalmente por personal técnico, para solucionar problemas sin necesidad de intervención remota."
+      },
+      {
+        "code": "ACCESS / AGGR. EQUIPMENT / MODULE LOGICAL RESET",
+        "description": "El reinicio lógico es un reinicio realizado a nivel de software, sin apagar físicamente el equipo. Se utiliza generalmente para restablecer la configuración del módulo sin interrumpir el hardware."
+      },
+      {
+        "code": "ACTIVATION",
+        "description": "Acción de habilitar un servicio, dispositivo o funcionalidad en el sistema para que esté operativo."
+      },
+      {
+        "code": "CONFIGURATION RESET",
+        "description": "Proceso de restaurar los parámetros de configuración predeterminados en un dispositivo de red (como un router o switch), resolviendo problemas de conectividad o rendimiento."
+      },
+      {
+        "code": "CV RELOAD",
+        "description": "Proceso de reiniciar o recargar el controlador de la red o el sistema de configuración para asegurar que las configuraciones y parámetros estén actualizados y funcionando correctamente."
+      },
+      {
+        "code": "LOGICAL CONFIGURATION CHANGE",
+        "description": "Modificación de los parámetros de configuración interna de los equipos o servicios de la red, sin necesidad de cambiar el hardware físico, para ajustar el rendimiento o la operación según las necesidades de la red."
+      },
+      {
+        "code": "LOGICAL CONFIGURATION RESET",
+        "description": "Restablecimiento de los parámetros de configuración lógica a los valores predeterminados o iniciales, para resolver problemas o volver a una configuración funcional estándar."
+      },
+      {
+        "code": "SOFTWARE PATCH",
+        "description": "Actualización o corrección pequeña que se aplica a un software en la red HFC para solucionar errores o mejorar la seguridad y el rendimiento del sistema sin realizar una actualización completa. Los parches suelen ser necesarios para corregir fallos menores o vulnerabilidades."
+      },
+      {
+        "code": "SOFTWARE UPGRADE",
+        "description": "Proceso de instalar una nueva versión de un software para mejorar sus características, corregir errores o agregar nuevas funcionalidades. En redes HFC, esto podría implicar la actualización de sistemas de gestión, equipos de red, servidores, o aplicaciones de control y monitoreo."
+      },
+      {
+        "code": "SOFTWARE/FEATURE ENABLE",
+        "description": "Acción de habilitar una característica o funcionalidad específica dentro de un software que ya está instalado en la red. Esto puede incluir activar nuevas opciones de gestión, control de tráfico, o servicios adicionales para los clientes."
+      },
+      {
+        "code": "NO ACTION PERFORMED",
+        "description": "Situación en la que no se realizó ninguna intervención o cambio en la red debido a que no era necesario, o bien, no se detectaron problemas que requerían acción."
+      }
+    ]
+  }
+  
