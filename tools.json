@@ -1,0 +1,45 @@
+{
+    "tools": {
+      "Grafana": {
+        "description": "Plataforma de monitoreo con gráficos que muestran la cantidad de clientes offline en tiempo real.",
+        "usage": "Visualización de clientes afectados en la red HFC."
+      },
+      "NTX": {
+        "description": "Sistema de monitoreo que proporciona el estado actual del nodo.",
+        "usage": "Verificación de estado y diagnóstico de nodos."
+      },
+      "Alpha": {
+        "description": "Herramienta de monitoreo de energía que indica si un nodo está afectado por fallas eléctricas.",
+        "usage": "Identificación de fallos eléctricos en nodos; se debe capturar severidad, fecha de creación (alarma nueva) y prioridad como evidencia."
+      },
+      "LUMA": {
+        "description": "Plataforma de la empresa de energía de Puerto Rico que muestra un mapa con las áreas sin energía.",
+        "usage": "Verificación de interrupciones eléctricas en áreas específicas."
+      },
+      "Secure_CRT": {
+        "description": "Aplicación para acceso a la CMTS, proporcionando datos detallados sobre clientes online, offline e intermitentes.",
+        "usage": "Monitoreo de estado de clientes en la red HFC."
+      },
+      "Genesys": {
+        "description": "Plataforma de comunicación utilizada para coordinar con los FSO y supervisores de Puerto Rico.",
+        "usage": "Gestión de comunicación para resolución de incidentes en la red."
+      },
+      "OTS": {
+        "description": "Sistema principal para la gestión de tickets en Puerto Rico.",
+        "usage": "Creación, seguimiento y resolución de tickets de incidentes en la red."
+      },
+      "JIRA": {
+        "description": "Plataforma de gestión de tickets utilizada tanto por el equipo técnico como por los FSO.",
+        "usage": "Consulta y documentación de tickets asignados."
+      },
+      "SolarWinds": {
+        "description": "Sistema de monitoreo de red que permite verificar el estado de las CMTS.",
+        "usage": "Detección y escalación rápida de CMTS caídas."
+      },
+      "Oracle": {
+        "description": "Base de datos que detecta alarmas en la red y genera tickets en OTS automáticamente ( este tarda 5 minutos para crear el tickt en ots).",
+        "usage": "Gestión automatizada de alarmas y generación de tickets."
+      }
+    }
+  }
+  
