@@ -1,0 +1,214 @@
+{
+    "approval_entries": [
+      {
+        "approval": "Element/Area:Power Supply, Componet/Action:Breaker; RootCause:Defective: tripped",
+        "verificacion": "Validar en NTX si el nodo ha sido restablecido.",
+        "acciones": {
+          "si_cumple": {
+            "mensaje": "Cerrar el ticket con los siguientes códigos:",
+            "codigos_cierre": {
+              "FAILURE_POINT": "Fixed (access) » HFC » Power supply breaker",
+              "FAILURE_CODE": "System Issues » Hardware » Hardware Failure",
+              "SOLUTION_CODE": "On site reset",
+              "ATTRIBUTED_TO": "Internal",
+              "RESOLVED_BY": "Outside Plant"
+            }
+          }
+        }
+      },
+      {
+        "approval": "Element/Area:Feeder, Componet/Action:Completed;Connector Change;Cut;General Work; RootCause:Feed change",
+        "verificacion": "Validar en NTX si el nodo ha sido restablecido.",
+        "acciones": {
+          "si_cumple": {
+            "mensaje": "Cerrar el ticket con los siguientes códigos:",
+            "codigos_cierre": {
+              "FAILURE_POINT": "Fixed (access) » HFC » Cable",
+              "FAILURE_CODE": "System Issues » Wiring Failure » Coaxial",
+              "SOLUTION_CODE": "Connector Setting",
+              "ATTRIBUTED_TO": "Internal",
+              "RESOLVED_BY": "Outside Plant"
+            }
+          }
+        }
+      },
+      {
+        "approval": "Element/Area:Node, Componet/Action:Breaker; RootCause:Broken by AEE",
+        "verificacion": "Validar en NTX si el nodo ha sido restablecido.",
+        "acciones": {
+          "si_cumple": {
+            "mensaje": "Cerrar el ticket con los siguientes códigos:",
+            "codigos_cierre": {
+              "FAILURE_POINT": "Fixed (access) » HFC » Power supply breaker",
+              "FAILURE_CODE": "System Issues » Hardware » Hardware Failure",
+              "SOLUTION_CODE": "On site reset",
+              "ATTRIBUTED_TO": "Internal",
+              "RESOLVED_BY": "Outside Plant"
+            }
+          }
+        }
+      },
+      {
+        "approval": "Element/Area:Line Extender, Componet/Action:Balance; RootCause:Incorrect pads/EQ",
+        "verificacion": "Validar en NTX si el nodo ha sido restablecido.",
+        "acciones": {
+          "si_cumple": {
+            "mensaje": "Cerrar el ticket con los siguientes códigos:",
+            "codigos_cierre": {
+              "FAILURE_POINT": "Fixed (access) » HFC » Amplifier",
+              "FAILURE_CODE": "System Issues » Hardware » Hardware Failure",
+              "SOLUTION_CODE": "Calibration",
+              "ATTRIBUTED_TO": "Internal",
+              "RESOLVED_BY": "Outside Plant"
+            }
+          }
+        }
+      },
+      {
+        "approval": "Element/Area:Feeder, Componet/Action:General Work; RootCause:Maintenance",
+        "verificacion": "Validar en NTX si el nodo ha sido restablecido.",
+        "acciones": {
+          "si_cumple": {
+            "mensaje": "Cerrar el ticket con los siguientes códigos:",
+            "codigos_cierre": {
+              "FAILURE_POINT": "Fixed (access) » HFC » Cable",
+              "FAILURE_CODE": "System Issues » Wiring Failure » Coaxial",
+              "SOLUTION_CODE": "Coaxial wiring replacement",
+              "ATTRIBUTED_TO": "Internal",
+              "RESOLVED_BY": "Outside Plant"
+            }
+          }
+        }
+      },
+      {
+        "approval": "Element/Area:No Fault Found, Componet/Action:No Fault Found; RootCause:Mitigation",
+        "verificacion": "Validar en NTX si el nodo ha sido restablecido.",
+        "acciones": {
+          "si_cumple": {
+            "mensaje": "Cerrar el ticket con los siguientes códigos:",
+            "codigos_cierre": {
+              "FAILURE_POINT": "Fixed (access) » HFC » HFC",
+              "FAILURE_CODE": "Process Issues » Change MGT » Outage Expected",
+              "SOLUTION_CODE": "Maintenance window completed",
+              "ATTRIBUTED_TO": "Internal",
+              "RESOLVED_BY": "Outside Plant"
+            }
+          }
+        }
+      },
+      {
+        "approval": "Element/Area:Line Extender, Componet/Action:Fuse Change; RootCause:Damaged fuse",
+        "verificacion": "Validar en NTX si el nodo ha sido restablecido.",
+        "acciones": {
+          "si_cumple": {
+            "mensaje": "Cerrar el ticket con los siguientes códigos:",
+            "codigos_cierre": {
+              "FAILURE_POINT": "Fixed (access) » HFC » Amplifier - Fuse",
+              "FAILURE_CODE": "System Issues » Hardware » Hardware Failure",
+              "SOLUTION_CODE": "EQ.HFC Replacement",
+              "ATTRIBUTED_TO": "Internal",
+              "RESOLVED_BY": "Outside Plant"
+            }
+          }
+        }
+      },
+      {
+        "approval": "Element/Area:Feeder, Componet/Action:Cables Changed; RootCause:Damaged by corrosion",
+        "verificacion": "Validar en NTX si el nodo ha sido restablecido.",
+        "acciones": {
+          "si_cumple": {
+            "mensaje": "Cerrar el ticket con los siguientes códigos:",
+            "codigos_cierre": {
+              "FAILURE_POINT": "Fixed (access) » HFC » Cable",
+              "FAILURE_CODE": "System Issues » Wiring Failure » Coaxial",
+              "SOLUTION_CODE": "Coaxial wiring replacement",
+              "ATTRIBUTED_TO": "Internal",
+              "RESOLVED_BY": "Outside Plant"
+            }
+          }
+        }
+      },
+      {
+        "approval": "Element/Area:Amplifier, Componet/Action:Change All; RootCause:Burned: external source",
+        "verificacion": "Validar en NTX si el nodo ha sido restablecido.",
+        "acciones": {
+          "si_cumple": {
+            "mensaje": "Cerrar el ticket con los siguientes códigos:",
+            "codigos_cierre": {
+              "FAILURE_POINT": "Fixed (access) » HFC » Amplifier",
+              "FAILURE_CODE": "System Issues » Hardware » Hardware Failure",
+              "SOLUTION_CODE": "EQ.HFC Replacement",
+              "ATTRIBUTED_TO": "Internal",
+              "RESOLVED_BY": "Outside Plant"
+            }
+          }
+        }
+      },
+      {
+        "approval": "Element/Area:Feeder, Componet/Action:General Work; RootCause:Broken by high vehicle",
+        "verificacion": "Validar en NTX si el nodo ha sido restablecido.",
+        "acciones": {
+          "si_cumple": {
+            "mensaje": "Cerrar el ticket con los siguientes códigos:",
+            "codigos_cierre": {
+              "FAILURE_POINT": "Fixed (access) » HFC » Cable",
+              "FAILURE_CODE": "System Issues » Wiring Failure » Coaxial",
+              "SOLUTION_CODE": "Coaxial wiring replacement",
+              "ATTRIBUTED_TO": "Internal",
+              "RESOLVED_BY": "Outside Plant"
+            }
+          }
+        }
+      },
+      {
+        "approval": "Element/Area:Amplifier;Tap, Componet/Action:540 Connector;Fuse Change; RootCause:Active client cause noise",
+        "verificacion": "Validar en NTX si el nodo ha sido restablecido.",
+        "acciones": {
+          "si_cumple": {
+            "mensaje": "Cerrar el ticket con los siguientes códigos:",
+            "codigos_cierre": {
+              "FAILURE_POINT": "Fixed (access) » HFC » Amplifier - Fuse",
+              "FAILURE_CODE": "System Issues » Hardware » Hardware Failure",
+              "SOLUTION_CODE": "EQ.HFC Replacement",
+              "ATTRIBUTED_TO": "Internal",
+              "RESOLVED_BY": "Outside Plant"
+            }
+          }
+        }
+      },
+      {
+        "approval": "Element/Area:Tap, Componet/Action:540 Connector; RootCause:Damaged by corrosion",
+        "verificacion": "Validar en NTX si el nodo ha sido restablecido.",
+        "acciones": {
+          "si_cumple": {
+            "mensaje": "Cerrar el ticket con los siguientes códigos:",
+            "codigos_cierre": {
+              "FAILURE_POINT": "Fixed (access) » HFC » TAP",
+              "FAILURE_CODE": "System Issues » Hardware » Hardware Failure",
+              "SOLUTION_CODE": "EQ.HFC Replacement",
+              "ATTRIBUTED_TO": "Internal",
+              "RESOLVED_BY": "Outside Plant"
+            }
+          }
+        }
+      },
+        {  
+            "approval": "Element/Area:Feeder, Componet/Action:Cables Changed; RootCause: Broken by high vehicle",
+            "verificacion": "Validar en NTX si el nodo ha sido restablecido.",
+            "acciones": {
+            "si_cumple": {
+            "mensaje": "Cerrar el ticket con los siguientes códigos:",
+            "codigos_cierre": {
+                "FAILURE_POINT": "Fixed (access) » HFC » TAP",
+                "FAILURE_CODE": "External Factor » MV Accident",
+                "SOLUTION_CODE": "EQ.HFC Replacement",
+                "ATTRIBUTED_TO": "Internal",
+                "RESOLVED_BY": "Outside Plant"
+            }
+        }
+      }
+    }
+  ]}
+    
+ 
+  
