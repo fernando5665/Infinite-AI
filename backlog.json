@@ -1,0 +1,23 @@
+{
+    "gestion_backlog": {
+      "validacion_previa": {
+        "condicion": "El ticket debe haber excedido el SLA de 8 horas.",
+        "verificacion": "Llamar al FSO para determinar la causa del backlog."
+      },
+      "causas_backlog": {
+        "Repuestos (Spare Parts)": "Falta de disponibilidad de un repuesto necesario para la reparación.",
+        "Licencias (Licenses)": "Demora debido a actualizaciones, mejoras o nuevas licencias en las plataformas de LLA.",
+        "Permisos (Permissions)": "Falta de disponibilidad de un permiso de acceso (ejemplo: autorización de la compañía eléctrica).",
+        "Presupuesto (Budget)": "Falta de presupuesto para comprar bienes o servicios necesarios para la solución.",
+        "Acceso al sitio (Site Access)": "Falta de disponibilidad de acceso físico al sitio (ejemplo: desastre natural, bloqueos de carreteras, lluvia).",
+        "Proveedor (Provider)": "Demora atribuida a un proveedor interno de LLA o a un proveedor de servicios públicos.",
+        "Atenuación (Attenuation)": "Reparación en curso de enlaces atenuados que contribuyen al problema.",
+        "Implementación (Implementation)": "Demora debido a la necesidad de una nueva implementación.",
+        "Monitoreo (Monitoring)": "El sistema está en observación, lo que retrasa el cierre del incidente. Si el problema reaparece, el tiempo se considera como interrupción.",
+        "Clima (Weather)": "Condiciones climáticas impiden la ejecución de la resolución de problemas.",
+        "Disponibilidad del FSO (FSO Availability)": "El FSO no está disponible de inmediato (ejemplo: activación nocturna o atención de otra falla).",
+        "Complejidad de resolución (Resolution Complexity)": "Alta complejidad en la resolución de fallas (ejemplo: empalme que tarda más de 6 horas).",
+        "Indeterminado (Undetermined)": "Falta de confirmación del equipo de resolución."
+      }
+    }
+  }
