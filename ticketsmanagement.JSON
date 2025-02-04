@@ -1,0 +1,58 @@
+{
+  "gestion_ticket": {
+    "paso_1": {
+      "nombre": "Validación previa",
+      "descripcion": "Antes de comenzar, verifica lo siguiente:",
+      "validaciones": [
+        {
+          "criterio": "Mantenimiento en JIRA",
+          "accion": "Asegúrate de que el nodo afectado NO esté en mantenimiento en JIRA."
+        },
+        {
+          "criterio": "Tickets duplicados",
+          "accion": "Confirma que no exista un ticket ya creado para el mismo nodo."
+        },
+        {
+          "criterio": "Afectación en NTX",
+          "accion": "Valida en NTX si el nodo sigue afectado."
+        }
+      ],
+      "accion_si_se_cumple": "Procede al paso 2.",
+      "accion_si_no_se_cumple": "Investiga la razón y actúa en consecuencia (por ejemplo, cierra el ticket si es duplicado o si el nodo ya está operativo)."
+    },
+    "paso_2": {
+      "nombre": "Generación del ticket",
+      "descripcion": "El ticket se genera automáticamente a través de Oracle.",
+      "accion": "Después de la creación del ticket en oracle , debes darle acknowledge al ticket a oracle."
+    },
+    "paso_3": {
+      "nombre": "Primera respuesta",
+      "descripcion": "Debes dar la primera respuesta dentro de los 15 minutos siguientes a la creación del ticket en OTS.",
+      "accion": "Incluye la frase 'en gestión' para evitar que el ticket expire por falta de actividad."
+    },
+    "paso_4": {
+      "nombre": "Validación de la afectación",
+      "descripcion": "Determina la causa de la afectación del nodo.",
+      "causas": {
+        "afectacion_por_energia": {
+          "criterio": "Si el nodo o nodos tienen afectación por energía, sigue estos pasos:",
+          "acciones": [
+            "Toma un screenshot de Alpha o Luma como evidencia.",
+            "Agrega un comentario al ticket incluyendo la evidencia.",
+            "Cambia la categoría del ticket de 'HFC' a 'Power Infrastructure'.",
+            "Asigna el ticket a Roberto Pérez (asegúrate de que la categoria se  'Power Infrastructure').",
+            "Reasigna el ticket a ti mismo después de la asignación a Roberto Pérez ( obligatorio)."
+          ]
+        },
+        "causa_desconocida": {
+          "criterio": "Si la causa de la afectación es desconocida:",
+          "acciones": [
+            "Verifica en Alpha y Luma si hay afectación de energía.",
+            "Si NO hay afectación de energía, agrega un comentario al ticket con la evidencia (por ejemplo: 'No se evidencia alarma en Alpha').",
+            "Asigna el ticket a un FSO."
+          ]
+        }
+      }
+    }
+  }
+}
