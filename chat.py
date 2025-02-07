@@ -83,7 +83,7 @@ if json_content and txt_content:
     # 🔹 Barra lateral de errores comunes
     st.sidebar.header("⚠️ Errores Comunes")
     common_errors = [
-        {"label": "Error 404", "description": "Página no encontrada."},
+        {"label": "Un ticket cerraro en OTS pero en JIRA no", "description": "Comunicarle esto a  T2 Santiago florez."},
         {"label": "Error 500", "description": "Problema interno del servidor."},
         {"label": "Fallo de conexión", "description": "Nodo desconectado."},
         {"label": "Error de autenticación", "description": "Usuario o contraseña incorrectos."},
