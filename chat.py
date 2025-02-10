@@ -78,7 +78,7 @@ st.title("🤓 Infinite Assistant AI")
 st.markdown("### Tu asistente de gestión inteligente 🔍")
 
 if json_content and txt_content:
-    st.success(" Hello 🖐️ ")
+    st.success(" Hello 🖐️ estoy aun en desarrollo  😀 ")
 
     # 🔹 Barra lateral de errores comunes
     st.sidebar.header("⚠️ Errores Comunes")
