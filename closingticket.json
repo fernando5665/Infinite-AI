@@ -37,7 +37,7 @@
         "ATTRIBUTED_TO": "Internal",
         "RESOLVED_BY": "Tier 1 Support"
       },
-      "NOTAS_IMPORTANTES": "Confirma Que No Existan Actividades En Curso Asociadas Al Ticket Duplicado."
+      "NOTAS_IMPORTANTES": "No hay notas importantes ."
     },
     "TICKET_DUPLICADO_POR_EL_CALL_CENTER": {
       "VALIDACION_PREVIA": "Antes De Gestionar Un Caso, Verifica En JIRA Y Oracle Si Este Ya Está Gestionado O En Proceso De Gestión. Si Ya Está Gestionado, Ciérralo Como Duplicado.",
