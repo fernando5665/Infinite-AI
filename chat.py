@@ -40,7 +40,7 @@ json_content = load_multiple_json(json_files)
 txt_content = load_multiple_txt(txt_files)
 
 # Configuración de la página
-st.set_page_config(layout="wide", page_title="🤓 Infinite Assistant AI", page_icon="🤖")
+st.set_page_config(layout="wide", page_title="Infinite Assistant AI", page_icon="infinite-4-colour-logo.png")
 
 # Variables de autenticación
 USER_CREDENTIALS = {"admin": "1234"}  # ⚠️ Cambiar a un sistema seguro en producción
