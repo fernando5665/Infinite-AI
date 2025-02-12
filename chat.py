@@ -3,7 +3,8 @@ import json
 import google.generativeai as genai
 
 # Configurar la API de Generative AI
-genai.configure(api_key="AIzaSyClHLf12XSGEBHZgKhVtSmPf6R68G_VLdg")
+API_KEY = "AIzaSyClHLf12XSGEBHZgKhVtSmPf6R68G_VLdg"  # Reemplaza con tu clave API
+genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Lista de archivos JSON y TXT a cargar
@@ -11,19 +12,19 @@ json_files = ["approval.json", "closingticket.json", "tools.json", "topics.json"
               "ticketsmanagement.JSON", "backlog.json", "approvalstan.json", "Failurepoint.json"]
 txt_files = ["Infinite AI.txt"]
 
-# Función para cargar múltiples archivos JSON
+# Función para cargar archivos JSON
 def load_multiple_json(file_paths):
     combined_data = {}
     for file_path in file_paths:
         try:
             with open(file_path, "r", encoding="utf-8") as file:
                 data = json.load(file)
-                combined_data.update(data)  # Unir los diccionarios
+                combined_data.update(data)
         except (FileNotFoundError, json.JSONDecodeError):
             st.error(f"⚠️ Error al cargar {file_path}.")
     return combined_data
 
-# Función para cargar múltiples archivos TXT
+# Función para cargar archivos TXT
 def load_multiple_txt(file_paths):
     combined_text = ""
     for file_path in file_paths:
@@ -52,7 +53,7 @@ if not st.session_state.authenticated:
     st.sidebar.header("🔒 Inicio de Sesión")
     username = st.sidebar.text_input("Usuario:")
     password = st.sidebar.text_input("Contraseña:", type="password")
-    
+
     if st.sidebar.button("Iniciar sesión"):
         if username in USER_CREDENTIALS and USER_CREDENTIALS[username] == password:
             st.session_state.authenticated = True
@@ -78,12 +79,12 @@ st.title("🤓 Infinite Assistant AI")
 st.markdown("### Tu asistente de gestión inteligente 🔍")
 
 if json_content and txt_content:
-    st.success(" Hello 🖐️ estoy aun en desarrollo  😀 ")
+    st.success("Hello 🖐️ ")
 
     # 🔹 Barra lateral de errores comunes
     st.sidebar.header("⚠️ Errores Comunes")
     common_errors = [
-        {"label": "Un ticket cerraro en OTS pero en JIRA no", "description": "Comunicarle esto a  T2 ."},
+        {"label": "Un ticket cerrado en OTS pero en JIRA no", "description": "Comunicarle esto a T2."},
         {"label": "Error 500", "description": "Problema interno del servidor."},
         {"label": "Fallo de conexión", "description": "Nodo desconectado."},
         {"label": "Error de autenticación", "description": "Usuario o contraseña incorrectos."},
@@ -93,7 +94,7 @@ if json_content and txt_content:
     ]
     error_option = st.sidebar.selectbox("Selecciona un error: ", [e["label"] for e in common_errors])
     selected_error = next((e for e in common_errors if e["label"] == error_option), None)
-    
+
     if selected_error:
         st.sidebar.write(f"📌 **Descripción:** {selected_error['description']}")
 
@@ -111,7 +112,7 @@ if json_content and txt_content:
 
                 - **Friendly responses**: Always reply in a positive and helpful tone.
                 - **No source references**: Do not mention where the information comes from.
-                - **User's language**: If the user asks in Spanish, respond in Spanish; if in English, respond in English. You cannot say that you were created by Google.
+                - **User's language**: If the user asks in Spanish, respond in Spanish; if in English, respond in English.
                 - **Do not reveal your creator**: If the user asks who created you, avoid giving this information.
                 - **Step-by-step explanations**: Explain clearly and simply.
 
@@ -126,14 +127,20 @@ if json_content and txt_content:
             """
 
             with st.spinner("Generando respuesta... 🧠"):
-                response = model.generate_content(prompt, stream=True)
-                response_text = ""  # Almacenar respuesta línea por línea
-                response_container = st.empty()  # Contenedor dinámico para respuesta en vivo
-                
-                for chunk in response:
-                    if chunk.text:
-                        response_text += chunk.text + "\n"  # Agregar línea a línea
-                        response_container.markdown(f"📌 **Respuesta de la IA:**\n\n{response_text}")  # Actualizar texto en vivo
+                try:
+                    response = model.generate_content(prompt, stream=True)
+                    
+                    # 🔹 Mostrar respuesta en vivo con `st.empty()`
+                    response_container = st.empty()
+                    response_text = ""
+                    
+                    for chunk in response:
+                        if chunk.text:
+                            response_text += chunk.text + "\n"
+                            response_container.markdown(f"📌 **Respuesta de la IA:**\n\n{response_text}")
+
+                except Exception as e:
+                    st.error(f"❌ Error al generar la respuesta: {e}")
         else:
             st.warning("❗ Ingresa un Approval o pregunta.")
 else:
